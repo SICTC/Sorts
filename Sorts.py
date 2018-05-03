@@ -1,8 +1,8 @@
 def quicksort(m):
     """Best = Average = O(n log(n)), Worst = O(n^2)"""
     #base case: empty list
-    if not m:
-        return []
+    if len(m) <= 1:
+        return m
     
     #choose the pivot as first element of the list
     pivot = m[0]
